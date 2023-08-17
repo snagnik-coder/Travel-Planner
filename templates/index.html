@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your AI Travel Planner</title>
+    <link rel="icon" type="image/png" href="static/plane.png">
+    <link rel="stylesheet" href="static/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVBAR CREATION -->
+   <header class="header">
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+    </nav>
+    <!-- form action="" class="search-bar">
+       <input type="text" placeholder="Search...">
+       <button><i class='bx bx-search'></i></button>
+    </form-->
+   </header>
+    <!-- LOGIN FORM CREATION -->
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo"><i class='bx bxs-plane-alt bx-tada'></i>  Your Travel Planner</h2>
+            <div class="text-item">
+                <h2>Welcome! <br></h2><span>
+                    Make Your Travel Plan Now
+                </span>
+                <p>Make the perfect plan for your travel getaway. Just enter the number of days and leverage the power of AI to make the perfect travel plan for your chosen destination.
+                </p>
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="login-section">
+            <div class="form-box login">
+                <form enctype="multipart/form-data" action="/makePlan" method='post'>
+                    <h2>Make My Plan</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-plane-take-off bx-flashing' ></i></span>
+                        <input class="input-text" type="place" name="place" required>
+                        <label>Place</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bx-calendar-check bx-flashing' ></i></span>
+                        <input class="input-text" type="days" name="days" required>
+                        <label>Days</label>
+                    </div>
+                    <br>
+                    <button class="btn">Let's Go</button>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- SIGN UP FORM CREATION -->
+
+    <script src="static/index.js"></script>
+</body>
+
+</html>
