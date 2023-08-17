@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = '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'
+openai.api_key = "Fill your API key here"
 
 days = 4
 place = "Paris"
